@@ -31,6 +31,6 @@ ME3 Literature Review Project, Imperial College London, 2026–27. Supervisor: Y
 | By Mon 7 Dec | Meeting 4: draft, abstract, and reference list (verbal feedback only) |
 | Thu 10 Dec | Submit (a day early) |
 
-## Still to add to `papers/`
+## Papers
 
-The 16 open-access sources were extracted online but their PDFs are not here yet. Links are in `extraction/paper_list.txt`.
+All 29 full-text sources are in `papers/`. The 15 cite-only sources are not; open each one only when you cite it.

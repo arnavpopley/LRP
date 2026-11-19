@@ -1,7 +1,7 @@
 LRP 241 Extraction (19 Nov 2026): all 25 sources other than your four starter/meeting-2 papers
 Batch 1 = 19 read online through a web reader; batch 2 = your 6 PDFs, read directly from the files (marked [file])
 Checked against the PDF files 19 Nov: Ehhalt & Rohrer, Derwent 2018, Bertagni, Warwick 2023, Bryant, Chen, Paulot 2024, Skeie, Krishnan, and Ocko & Hamburg —> every batch-1 figure for these 10 found in the file; page numbers match
-Also checked 19 Nov: Frazer-Nash, Esquivel-Elizondo, Cooper, Mouli-Castillo 2021, Duroha, and Jülich —> all figures found; Frazer-Nash H_2:CH_4 mass ratios are on pp.24–26, not only p.24
+Also checked 19 Nov: Frazer-Nash, Esquivel-Elizondo, Cooper, Mouli-Castillo 2021, Duroha, Jülich, Westra (loss-rate page is p.11, corrected), Arrigoni & Bravo Diaz, and EA/NPL —> all 25 extracted sources now checked against PDFs —> all figures found; Frazer-Nash H_2:CH_4 mass ratios are on pp.24–26, not only p.24
 
 How this was read:
 • Through a web reader pointed at each publisher's own PDF; I never held the files —> page and table numbers are as the reader reported them
@@ -15,7 +15,7 @@ Conflicts to check first:
    2. Skeie says the 1σ band 9.4–13.9 is "shown in Sand et al. (2023)" (p.4934) —> not in Sand's main text; 11.6 ± 2.8 gives 8.8–14.4 —> check Sand's supplement
    3. H_2:CH_4 leak ratio in turbulent flow from the same volumetric 2.8: Frazer-Nash mass ratio ~0.35 (p.24) vs Jülich 0.21 (p.9) —> check Jülich's pressure/density assumptions
    4. RESOLVED from the PDF: Krishnan Table 3 (p.9518) headers are "Atm. Loss" lifetime 7.74yr and "Soil Uptake" lifetime 3.41yr (base case); Table A1 (p.9535) separately gives 6.9 / 3.3yr for OsloCTM3 alone
-   5. Westra's 4.2% is "relative to estimated daily production" (p.10) at a chemical park where surplus by-product H_2 is vented (p.5) —> not a leak rate for purpose-built H_2 infrastructure
+   5. Westra's 4.2% is "relative to estimated daily production" (p.11) at a chemical park where surplus by-product H_2 is vented (p.5) —> not a leak rate for purpose-built H_2 infrastructure
    6. RESOLVED from Fig 4 (p.9360): worst-case green ≈ −60% at 10yr and ≈ −85% at 100yr; worst-case blue ≈ +40% at 10yr and ≈ −45% at 100yr. Abstract's "around 80%" is rounding; "three-quarters" (p.9360) does not match the figure —> cite Fig 4, not the prose. GWP_20 range read as [20–40] (p.9352); Warwick report says 20–44
    7. Jülich Table 5 (p.10): components sum to 166 t, total given as 173 t; 2,160 t CO_2e stated vs 173 × 11.6 ≈ 2,007
    8. Source of the 1–10% leak range: ACP paper cites Schultz 2003 and Warwick 2004 (p.13453); the report cited E4tech 2019 (p.18)
@@ -150,8 +150,8 @@ Esquivel-Elizondo et al 2023 (Front Energy Res 11:1207208)
 Westra et al 2024 (Sci Rep 14:24147)
 • Method: AirCore sampler on a car and a drone + gas chromatography; precision < 2 ppb (pp.2–3)
 • Site: Chemical Park Delfzijl (~4 km^2): chlor-alkali electrolysis (surplus H_2 vented); H_2O_2 plant with SMR; fuelling station with storage + compressor (p.5)
-• Emission rates: 0.5–2.1 g/s (mass balance); 0.1–2.0 g/s (Gaussian plume); mass balance 2.3× higher on average (p.10)
-• Loss up to 4.2% "relative to estimated daily production" (p.10); no single uncertainty given
+• Emission rates: 0.5–2.1 g/s (mass balance); 0.1–2.0 g/s (Gaussian plume); mass balance 2.3× higher on average (p.11)
+• Loss up to 4.2% "relative to estimated daily production" (p.11); no single uncertainty given
 • Sources: "leakage, purging and storage" (p.11); no split between them
 • Sample: 7 car transects; 4 drone flights; 3 good downwind transects (p.6); park "not fully representative" of the H_2 value chain (p.5)
 • States that modelled 1–10% loss estimates have "not been validated at all by actual measurements" (p.2)
