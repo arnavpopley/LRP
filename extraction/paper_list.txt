@@ -62,8 +62,8 @@ Objective 3: estimates compared + spread over time (4 pages)
 
 
 Objective 4a: how much leaks + infrastructure (part of 3.5 pages)
-  READ    Frazer-Nash Consultancy for BEIS 2022, "Fugitive hydrogen emissions in a future hydrogen economy" (8 Apr 2022) [F] —> UK bottom-up by stage; total 0.96% (50% confidence), 1.50% (99%) (p.8); electrolysis venting 3.32% —> 0.24% with recombination (p.6); pipe-wall permeation NOT included (p.28)
-  EXTRACT Esquivel-Elizondo et al 2023, Front Energy Res 11, 1207208; 10.3389/fenrg.2023.1207208 [F] —> whole-chain estimates 0.2–20%; none empirically measured
+  READ    Frazer-Nash Consultancy for BEIS 2022, "Fugitive hydrogen emissions in a future hydrogen economy" (8 Apr 2022) [P] —> UK bottom-up by stage; total 0.96% (50% confidence), 1.50% (99%) (p.8); electrolysis venting 3.32% —> 0.24% with recombination (p.6); pipe-wall permeation NOT included (p.28)
+  EXTRACT Esquivel-Elizondo et al 2023, Front Energy Res 11, 1207208; 10.3389/fenrg.2023.1207208 [P] —> whole-chain estimates 0.2–20%; none empirically measured
   EXTRACT Westra et al 2024, Sci Rep 14, 24147; 10.1038/s41598-024-76373-2 [F] —> first field detection; up to 4.2% of daily production at a Dutch chemical park that vents surplus H_2 —> proves measurement is possible; not a leak rate for H_2 infrastructure
   EXTRACT Cooper et al 2022, Sci Total Environ 830, 154624; 10.1016/j.scitotenv.2022.154624 [P] —> green chain 2.6% (0.1–6.9%); blue 1.4% (0.1–4.3%) (p.6); rates scaled from gas data; CO_2e rests on the pre-2022 GWP range 1.9–9.8 (p.2)
   EXTRACT Arrigoni & Bravo Diaz 2022, JRC130362 / EUR 31188 EN; 10.2760/065589 [F] —> JRC expert-workshop summary: Air Liquide stage figures (pp.15–17); ~2% lost by 2050; most sensors cannot go below 100 ppm (p.28)
@@ -77,7 +77,7 @@ Objective 4a: how much leaks + infrastructure (part of 3.5 pages)
 Objective 4b: detection + odorisation
   READ    Environment Agency / NPL 2025 (Feb), "Net zero: hydrogen monitoring review" SC230001/R [F] targeted —> "no established methods" for emissions to atmosphere (p.6); 7 instruments tested (p.36–37); sensitivity ~ppm at best, others ~1% v/v (p.42)
   EXTRACT Mouli-Castillo et al 2020, IJHE 45(20), 11875–11884; 10.1016/j.ijhydene.2020.02.095 [P] —> 5 odorants; 4 pass; the only fuel-cell-compatible one (5-ethylidene-2-norbornene) fails
-  EXTRACT Mouli-Castillo et al 2021, IJHE 46(27), 14881–14893; 10.1016/j.ijhydene.2021.01.211 [F] —> 3 sulphur odorants tested in H_2 and methane; H_2 + NB smelled from 500 ppm gas-in-air, methane + NB only at 10,000 ppm
+  EXTRACT Mouli-Castillo et al 2021, IJHE 46(27), 14881–14893; 10.1016/j.ijhydene.2021.01.211 [P] —> 3 sulphur odorants tested in H_2 and methane; H_2 + NB smelled from 500 ppm gas-in-air, methane + NB only at 10,000 ppm
   CITE    Kopasz 2007, IJHE 32(13), 2527–2531; 10.1016/j.ijhydene.2006.11.001 [A] —> odorants degrade fuel cells and must be removed; detectors more reliable than smell
   CITE    Hübert et al 2011, Sens Actuators B 157(2), 329–352; 10.1016/j.snb.2011.04.070 [T] —> sensor-type review
 
