@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\setlist{nosep,leftmargin=1.4em}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{1.1ex}{0.5ex}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4ex}
+\pagestyle{empty}
+
+\begin{document}
+
+{\Large\bfseries LRP 241: Meeting 2 Plan}\\[0.3ex]
+{\small GWP of Hydrogen \quad|\quad Supervisor: Yannis Hardalupas \quad|\quad Papers: Sand et al.\ 2023; Hauglustaine et al.\ 2022}
+
+\section{Purpose}
+\begin{enumerate}
+  \item Show you have read and understood the two assigned papers.
+  \item Get scope decisions only he can make.
+  \item Leave with agreed next steps recorded in the meeting log.
+\end{enumerate}
+He is testing whether you critique or merely summarise.
+
+\section{Running order (25--30 min)}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item \textbf{Since meeting 1 (1 min).} 26 sources tiered; tracker built; Krishnan et al.\ 2026 located. Facts only.
+
+  \item \textbf{Headline (30 s). Lead with this.}
+  \begin{tcolorbox}[colback=gray!8,colframe=gray!50,boxsep=2pt,left=4pt,right=4pt,top=2pt,bottom=2pt]
+  \emph{``The apparent convergence on a GWP of $\approx 12$ is models sharing assumptions. The real uncertainty reduces to two physical quantities: how much leaked \ce{H2} the soil absorbs, and where it leaks.''}
+  \end{tcolorbox}
+
+  \item \textbf{Sand 2023 (3 min).}
+  \begin{itemize}
+    \item 5-model ensemble; $+10\%$ surface \ce{H2}; steady state $\Rightarrow \mathrm{GWP}_{100} = 11.6 \pm 2.8$.
+    \item Settles Derwent's pulse vs steady-state objection.
+    \item Does not settle: soil-sink uncertainty is expert judgement and the largest term; UKCA omits stratospheric \ce{H2O}; emission location untested (authors admit, p7).
+  \end{itemize}
+
+  \item \textbf{Hauglustaine 2022 (3 min).}
+  \begin{itemize}
+    \item One model plus analytical impulse-response functions $\Rightarrow \mathrm{GWP}_{100} = 12.8 \pm 5.2$.
+    \item Key point: their own NH-only value is $10.7$, which supports Derwent's latitude argument.
+    \item Break-even thresholds (feed objective 4): green \ce{H2} beneficial at any realistic leak; $>60\%$ blue and $>7\%$ leak $\Rightarrow$ no benefit at 100 yr.
+    \item Derwent's borrowed stratospheric term: $12.8 \times 0.47 \times 0.61 \approx 3.7$, consistent.
+  \end{itemize}
+
+  \item \textbf{Tie the four papers together (2 min).} Read the ``Comparison'' section of the notes. This is where you show critique.
+
+  \item \textbf{Objective 4 started (2 min).} Hauglustaine (thresholds); Frazer-Nash 2022 (stage-by-stage leak rates); EA/NPL 2025 (detection is built for safety at $\sim 4\%$ LFL, not for climate-relevant chronic leaks $<1\%$).
+
+  \item \textbf{Report plan (1 min).} Page split and figures.
+
+  \item \textbf{Questions. Most important; cut items 3--7 before cutting this.}
+  \begin{enumerate}[label=Q\arabic*.]
+    \item Page split OK? Objective 4 capped at $\sim 3.5$ pages?
+    \item \textbf{Highest priority.} Is a simple break-even calculation acceptable as own analysis:
+    \[
+      \mathrm{GWP}_{100}\, f_{\mathrm{leak}}\, m_{\ce{H2}} \quad \text{vs} \quad m_{\ce{CO2},\,\mathrm{avoided}} \;?
+    \]
+    \item Include Krishnan 2026 as the current state of the soil-sink question?
+    \item Cite BEIS ($11 \pm 5$), ACP ($12 \pm 6$), or both?
+    \item Redraw published figures or reproduce with attribution?
+    \item Meeting 3 date.
+  \end{enumerate}
+  \textbf{Extra:} Hauglustaine p10 states an OH change of ``$+8\%$'' per 200\,Tg/yr; added \ce{H2} should deplete OH. Ask whether you are misreading it. Frame as a question.
+
+  \item \textbf{AI reflection (1 min).} Used for screening, extraction and challenging analysis; every number checked against the PDF; three errors caught; no report text.
+
+  \item \textbf{Close.} Agree: Tier B extraction; section 1 draft and section 2 skeleton before meeting 3; next papers Krishnan 2026 and Ocko \& Hamburg 2022. Repeat them back to him.
+\end{enumerate}
+
+\section{Know these cold (he will probe)}
+\begin{itemize}
+  \item \textbf{Soil sink:} $\sim 75\%$ of \ce{H2} removal. Larger sink $\Rightarrow$ shorter lifetime $\Rightarrow$ lower GWP.
+  \item \textbf{\ce{CH4} feedback factor:} less OH $\Rightarrow$ longer \ce{CH4} lifetime $\Rightarrow$ even less OH; amplifies the \ce{CH4} term by $\approx 1.3$--$1.5$.
+  \item \textbf{Steady state vs pulse:} the time-integrated response to a pulse equals the steady-state perturbation scaled by lifetime, so the two are equivalent.
+  \item \textbf{Why NH is lower:} more land $\Rightarrow$ more soil uptake $\Rightarrow$ shorter lifetime ($2.0$ vs $2.5$\,yr) $\Rightarrow$ less warming.
+\end{itemize}
+
+\section{After the meeting}
+\begin{enumerate}
+  \item Read the meeting log before clicking Agree; it records what he approved, especially Q2.
+  \item Same-day follow-up email: agreed actions and meeting 3 date.
+  \item Log his answers in the tracker.
+\end{enumerate}
+
+\end{document}

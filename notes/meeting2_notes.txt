@@ -1,0 +1,115 @@
+LRP Meeting 2 Notes: Sand et al 2023 + Hauglustaine et al 2022
+
+
+Since meeting 1:
+• Objectives 1–3 agreed as proposed; obj 4 made core, engineering framing (leak rate vs break-even; infrastructure; detection/odorants; net result)
+• Corpus: 26 sources tiered A/B/C; 16 DOIs verified; RIS into Zotero; tracker set up (GWP table 14 rows; leakage table 10 rows; AI log; search log)
+• Newest work: Krishnan et al 2026 (ACP 26, 9509; Jul 2026) —> 6-model budget constrains soil sink to 49–77 Tg/yr —> the quantity Derwent/Warwick disagree over
+• Critique papers: Yang et al 2025 (GEOS-Chem: correcting the OH bias cuts GWP_100 20%, 10.8 —> 8.8; every 3D model's CH_4 lifetime 15–26% too short); Chen, Solomon & Stone 2024 (4-equation box model overstates time-integrated CH_4 response by 123% —> hits Bertagni 2022's leak threshold, not Warwick's GWP)
+• Obj 4 sources: Frazer-Nash 2022 (UK bottom-up: 0.96% at 50% confidence; 1.50% at 99%); Ocko & Hamburg 2022 (impact vs fossil at 1% and 10% leak, 20 vs 100yr); EA/NPL 2025 (no complete method to measure site emission rates)
+
+
+Recap of the gap (see M1 notes):
+• Derwent 8 ± 2 vs Warwick 11 ± 5; agree on strat (~3.7 vs 3.0); disagree in trop (4.5 vs 7.9) —> OH sink ref + injection latitude —> soil sink problem in disguise
+
+
+1. Sand et al 2023
+• 5-model ensemble (GFDL-AM4.1, OsloCTM3, INCA, WACCM6, UKCA) + UCI CTM for budget/control only (p2) —> the reference number the field now cites; Derwent co-author
+
+Modelling method:
+   A. 3 runs per model: CTRL; +10% surface H_2; +10% surface CH_4 (p2, p7)
+   B. CH_4 pinned at the surface (as Warwick) —> CH_4 run used to infer the CH_4 response to the OH change from the H_2 run
+   C. Steady state; flux = burden ÷ lifetime; forcing normalised per Tg/yr of sustained H_2
+   D. Integral of a pulse's transients = steady-state perturbation scaled by lifetime; CH_4 mode 7–14yr so pulse runs need ~60yr integration —> steady state used instead (p9) —> answers Derwent's pulse-vs-steady-state objection
+   E. CH_4 feedback factor = perturbation lifetime ÷ total lifetime; CH_4 radiative efficiency 0.448 mW/m^2 per ppb with −14% adjustment (p8)
+   F. GWP_100 = AGWP(H_2) ÷ AGWP(CO_2); ERF summed over CH_4 + trop O_3 + strat H_2O; aerosols excluded (IPCC practice)
+   G. Scaled to match the 10% perturbation: GFDL ×4; GFDL-emi ×25; OsloCTM-emi ×1.65 (p5)
+
+Results:
+• GWP_100 = 11.6 ± 2.8 (1σ; ±4.7 at 90%): CH_4 44%; O_3 38%; strat H_2O 18% (p5; Table 1 p6; Fig 4)
+• GWP_20 = 37.3 ± 15.1; GWP_500 3.31 ± 0.98 (p5)
+• H_2 lifetime 2.4yr (1.9–2.7); burden ~200 Tg (p2); H_2 feedback factor 0.95–1.0 (p3)
+• CH_4 feedback factor 1.36–1.55 (vs 1.34 ± 0.06 multi-model norm); CH_4 perturbation lifetime 10.4yr vs AR6 11.8 (p3, p6)
+• Soil sink across models 44–73 Tg/yr; harmonised to 59 Tg/yr —> 11.4 ± 2.8 (barely moves) (p7)
+• ±2.8 = 24% of best estimate, root-square summed: soil sink 18% (largest); AGWP_CO2 16%; everything else <4% (Table 1 p6); soil ±15 Tg/yr alone —> ±2.1 (p6)
+• In-paper comparison: Warwick 12 ± 6 and Hauglustaine 12.8 ± 5.2 "comparable"; ~2× earlier estimates that omitted the stratosphere (p5, p7); Derwent TROPOS 8 ± 2 (95%) cited (p2)
+
+Critique:
+• Ensemble ≠ independent evidence: shared chemistry schemes, same CH_4 radiative efficiency, same IPCC factors —> ±2.8 is model spread + judgement, nothing observationally constrained; Yang 2025 shows the OH bias in GEOS-Chem (not one of the 5); its Table 1 shows the same too-short CH_4 lifetime in GFDL and UKESM1 —> likely shared by all
+• Soil ±15 Tg/yr = expert judgement, symmetric around 59 (Table 1 p6); doesn't fully cover Ehhalt & Rohrer 60 +30/−20 —> highest soil sinks outside the range (p9); Krishnan 2026 is the fix (49–77)
+• CH_4 feedback 1.36–1.55 above the norm —> same lean as Warwick's 1.49; largest term inflated
+• UKCA did not model strat H_2O changes (radiation uncoupled; p5, p10) —> only trop terms in Fig 4 (p6) —> 1 of 5 models blind to the 18% term
+• Emission location untested: "future work should test for emission location dependency, especially NH vs. SH" (p7) —> does not refute Derwent's latitude argument; Skeie 2025 later: 10.2–14.2 across 7 sites; inside Sand 1σ except 2 remote sites
+• Only 2 emission-driven runs (GFDL-emi, OsloCTM-emi); present-day background; WACCM implied emissions 68.1 Tg/yr and UKCA 23 Tg/yr both outside published ranges (p7)
+• Verdict: removes pulse-vs-steady-state from the Derwent gap —> what's left is OH-sink ref + latitude, exactly the M1 conclusion
+
+
+2. Hauglustaine et al 2022
+• Single model (GFDL-AM4.1, Paulot 2021 runs) for radiative efficiencies + analytical impulse-response functions for metrics (p2, p10) —> source of Derwent's borrowed strat term; first paper to turn GWP into break-even leak rates
+
+Modelling method:
+   A. Radiative efficiencies per ppb from one sustained 200 Tg/yr emission run ("likely an upper bound"); total 0.13 mW/m^2 per ppb: CH_4 46%; strat H_2O 28%; trop O_3 21%; strat O_3 5% (p2)
+   B. H_2 IRF = single exponential, lifetime 2.5yr (2.1yr trop; NH 2.0yr) (p4, p10)
+   C. CH_4: OH lifetime 9.7yr + strat (120yr) + soil (160yr) —> perturbation lifetime 12.4yr; feedback 1.315 (p10); paper states OH change "+8%" per 200 Tg/yr (p10) —> sign odd for an OH sink; check Paulot 2021
+   D. Pulse metrics (1 Tg pulse) and sustained metrics (1 Tg step); 1-yr time step —> ~10% difference in GWP_p,100 (p11)
+   E. Soil sink not an explicit input —> buried in the 2.5yr lifetime from GFDL; uncertainty enters only as ±0.5yr on lifetime (p11)
+   F. Scenarios: leak 0.1–15% (1–10% realistic); green-only and 30/70 blue/green (HC2017 2050); CO_2e vs avoided CO_2 on GWP_100 and GWP_20 (p5, p11)
+
+Results:
+• GWP_100 = 12.8 ± 5.2 (90% CI) global; NH-only emissions 10.7 ± 4.4 (Table 1 p4); CH_4 = 53% of GWP_100, 48% of GWP_20 (p4)
+• GWP_20 = 40.1 ± 24.1 (NH 33.8 ± 12.2); GTP_20 = 17.8 ± 23.3 —> GTP uncertainty > value (Table 1 p4)
+• Green H_2, 10% leak: CO_2e = 13% of avoided (GWP_100), 40% (GWP_20) —> green stays beneficial at any realistic leak (p5)
+• 30/70 blue/green: 1% leak —> 20.1% of avoided given back; 10% leak —> 64% (GWP_100), 153% (GWP_20) —> worse than fossil on 20yr view (p5)
+• Thresholds: >60% blue + >7% leak —> no benefit at 100yr; >30% blue + >3% leak —> none at 20yr (p5)
+• Cumulative 2030–2100 (331 GtCO_2 abated at 0% leak): green-only 327 —> 289 GtCO_2e (1% —> 10% leak); blue+green 259 (1%); grey+blue+green 258 —> 103 (p6)
+• Why > Derwent 5–6: higher CH_4 radiative efficiency; strat effects STOCHEM lacked; lifetime 2.1 vs 1.6yr; STOCHEM CH_4 peak 48 vs 60 pptv/Tg (p4, p10)
+
+Critique:
+• One model, one 200 Tg/yr run —> linearity assumed down to a 1 Tg pulse
+• Soil sink fixed inside a 2.5yr IRF lifetime; only ±0.5yr lifetime uncertainty propagated (IPCC AR6 7.6 method); total GWP uncertainty 31–36% (p11) —> soil handled indirectly; authors admit "sensitivity of the results to assumptions made for H_2 soil uptake" (p4)
+• NH 10.7 vs global 12.8 (NH lifetime 2.0yr: more land, more soil uptake; p4) = Derwent's latitude argument in Hauglustaine's own numbers; they use NH values for European leakage —> Sand calls this "comparable" while it supports the one point Derwent used to pull everyone down
+• Blue H_2 emission factor 5.7 kgCO_2/kgH_2 (vs 1.5 earlier) drives the scenario thresholds (Methods p12)
+• Scenarios illustrative; post-2050 frozen; CH_4 oxidation CO_2 and carbon-cycle feedbacks excluded (p10, p11)
+• Derwent's borrowed ~3.7 strat term: non-CH_4 share 12.8 × 0.47 ≈ 6.0; strat share of non-CH_4 RE (28+5)/(28+21+5) ≈ 0.61 —> ≈ 3.7 (own estimate from p2/p4; Supp Fig S1 not in main PDF) —> consistent
+
+
+Comparison (all 4 papers):
+• Derwent vs Warwick: trop disagreement (OH sink ref; latitude) —> soil sink
+• Sand: averages 5 models to 11.6; admits soil ±15 is judgement; location never tested —> lands near Warwick without settling Derwent's points
+• Hauglustaine: NH-only 10.7 shows location is worth ~2 GWP units —> Derwent's latitude point is real; his OH-sink choice is the contested one
+• "Convergence on 12" = convergence of models sharing assumptions; residual uncertainty sits in 2 engineering quantities: how much leaked H_2 the soil absorbs; where it leaks
+• Krishnan 2026 (49–77 Tg/yr soil) = first observational constraint on the first; Skeie 2025 on the second
+
+
+Obj 4 strand started:
+• Hauglustaine thresholds feed obj 4c directly; Ocko & Hamburg 2022: impact vs fossil at 1% and 10% leak, 20 vs 100yr (green at 10%: ~50% cut over 20yr; ~80% over 100yr)
+• Frazer-Nash 2022: stage-by-stage leak rates; total 0.96% (50% confidence) / 1.50% (99%) (p.8); Warwick's 1%/10% are its own bounds (cites E4tech 2019; p.18)
+• EA/NPL 2025: instruments measure conc; no complete method for site emission rates; small chronic leaks poorly understood —> detection built for safety (4% LFL), not climate (sub-1% chronic)
+
+
+Report plan (18 pages):
+• Intro + method 1.5; obj 1 2.5; obj 2 4; obj 3 4; obj 4 3.5; conclusions 1.5
+• Figures: Derwent Fig 3; Warwick Table 10; Sand Fig 4 (per-model GWP); own timeline of GWP_100 estimates 2001–2026 with error bars
+
+
+Questions:
+   1. Page split OK? Obj 4 capped at ~3.5?
+   2. Obj 4: simple break-even calc (GWP × leak rate vs CO_2 saved) acceptable as own analysis, or review only?
+   3. Include Krishnan 2026 as current state of the soil-sink question?
+   4. BEIS 11 ± 5 vs ACP 12 ± 6: cite both and explain, or ACP only?
+   5. Published figures: redraw or reproduce with attribution?
+   6. Meeting 3 date
+
+
+AI use:
+• For: pre-read briefings; abstract screening; fixed-field extraction from PDFs; DOI location; challenging my comparison
+• Checked: every number + page ref vs PDF; every DOI vs publisher page
+• Wrong so far: BEIS GWP given as 12 ± 6 (report 11 ± 5); Esquivel-Elizondo journal; box-model GWP misattributed to Bryant (is Chen et al); Frazer-Nash called the source of Warwick's 1%/10% (it isn't); Chen's critique aimed at Warwick (it targets Bertagni's model) —> all caught at source
+• Not used for: any report text
+
+
+Next:
+• Extract Tier B papers into tracker; spot-check
+• Draft section 1 (chemistry) + section 2 skeleton before meeting 3
+• Leakage-strand citation search (Ocko & Hamburg; Frazer-Nash)
+• Next 2 papers (meeting 3): Krishnan et al 2026; Ocko & Hamburg 2022

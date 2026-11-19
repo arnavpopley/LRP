@@ -1,0 +1,91 @@
+LRP 241 Paper List v3 (verified 19 Nov 2026; statuses updated after the web-read of the 16 free PDFs): 44 sources
+Replaces v2. Every citation below was checked today against Crossref, the publisher page, or the reference lists printed in your four PDFs.
+
+Tiers:
+  READ = read yourself, in full or targeted (9; 4 done)
+  EXTRACT = I pull the fixed fields + page refs from the PDF; you spot-check (19)
+  CITE = one fact or definition only; no reading (16)
+Use check (how far the stated use was confirmed):
+  [P] = against the PDF itself (your files)
+  [F] = against the paper's full text or PDF, read online
+  [A] = against the abstract only —> numbers still to come from the PDF
+  [T] = title and citation only —> do not quote a finding until the PDF is in hand
+
+
+Changes from v2:
+• Warwick 2004 moved: it reports NO GWP (not among the prior estimates listed by Warwick 2022 p.52–54 or Derwent 2023 p.8337–9) —> history only, off the timeline figure
+• Frazer-Nash 2022 is NOT the source of Warwick's 1%/10%: Warwick sets those as its own bounds and cites E4tech 2019 (report p.18) —> E4tech 2019 added
+• Chen 2024's critique is of the four-equation model used by Bertagni 2022, not of Warwick's GWP —> Bertagni now does two jobs (obj 3 + obj 4c)
+• Derwent 2018 added: the 4.3 (0–9.8) point for the timeline
+• Fan 2022 removed: think-tank commentary (soft); Esquivel-Elizondo 2023 already reviews it
+• Skeie, Yang, Ocko & Hamburg, Esquivel-Elizondo: usage notes corrected to what the papers say
+• Added later the same night: Mouli-Castillo 2021, a second odorant paper with test results in hydrogen
+• Corrected later the same night: Yang's standard GEOS-Chem value is 10.8 after all; the earlier change to 12 ± 3 was my error
+• Filled in: Ouyang volume/pages; US inventory authors (Duroha et al); all 7 from-memory DOIs confirmed
+
+
+Objective 1: chemistry + H_2 budget (2.5 pages)
+  READ    Ehhalt & Rohrer 2009, Tellus B 61(3), 500–535; 10.1111/j.1600-0889.2009.00416.x [F] —> the budget reference (Table 1 p.507); soil 60 +30/−20; two incompatible soil-sink clusters, ~55 vs ~86 Tg/yr (p.522)
+  READ    Krishnan et al 2026, ACP 26(13), 9509–9539; 10.5194/acp-26-9509-2026 [F] —> 6 models; soil sink 49–77 Tg/yr; atmospheric production 37–60; atmospheric loss 15–30; no GWP given. Table 3 (p.9517) has 7.74yr and 3.41yr but the labels are unclear —> read the header yourself
+  EXTRACT Ouyang et al 2025, "The global hydrogen budget", Nature 648, 616–624; 10.1038/s41586-025-09806-1 [P] —> sources 69.9 ± 9.4, sinks 68.4 ± 18.1 Tg/yr; soil 50.0 ± 18.0 (73%); lifetime 2.8yr; ~0.02 °C (check its baseline)
+  EXTRACT Paulot et al 2024, ACP 24(7), 4217–4229; 10.5194/acp-24-4217-2024 [F] —> model underestimates surface H_2 by ~10 ppb; soil sink has most likely strengthened (NH); no GWP
+  CITE    Novelli et al 1999, JGR 104(D23), 30427–30444; 10.1029/1999JD900788 [P] —> early observation-based budget; one of the 10 budget studies Warwick averages for the soil sink (report p.54)
+  CITE    Prather 2003, Science 302, 581–582; 10.1126/science.1091060 [T] —> perspective piece in the same Science issue as Schultz
+  CITE    Schultz et al 2003, Science 302, 624–627; 10.1126/science.1089527 [P] —> early impact study; one source of the 1–10% leak range (Hauglustaine p2)
+  CITE    Tromp et al 2003, Science 300, 1740–1742; 10.1126/science.1085169 [P] —> early stratospheric-ozone warning; rests on ~20% leak rates Hauglustaine calls unrealistic (p2)
+  CITE    Warwick et al 2004, GRL 31, L05107; 10.1029/2003GL019224 [P] —> early 2-D model study, no GWP; with Schultz 2003, what the ACP paper cites for the 1–10% leak range (p.13453)
+  CITE    Holmes et al 2013, ACP 13(1), 285–302; 10.5194/acp-13-285-2013 [P] —> CH_4 lengthens its own lifetime (Sand p3 cites it for this)
+
+
+Objective 2: how GWP is estimated (4 pages)
+  CITE    IPCC AR6 WG1 Ch7 (Forster et al 2021), pp.923–1054; 10.1017/9781009157896.009 [P] —> GWP definition; radiative efficiencies; CH_4 feedback
+  CITE    Fuglestvedt et al 2010, Atmos Environ 44(37), 4648–4677; 10.1016/j.atmosenv.2009.04.044 [P] —> steady state —> GWP method; Warwick found it unsuitable for H_2 and derived a general version (report s6.2)
+  CITE    Shine et al 2005, Climatic Change 68(3), 281–302; 10.1007/s10584-005-1146-9 [P] —> GTP as the alternative metric
+  EXTRACT Chen, Solomon & Stone 2024, Front Energy Res 12, 1463450; 10.3389/fenrg.2024.1463450 [F] —> 66-reaction box model; GWP_100 10 (+7/−4); GWP_20 28 (+18/−11); four-equation system overstates peak CH_4 response by ~85% and time-integrated by 123%; feedback factor 1.7 vs 1.4. Target = the framework Bertagni 2022 used; Warwick is cited, not criticised
+  EXTRACT Yang et al 2025, GRL 52(5), e2024GL112445; 10.1029/2024GL112445 [P] —> GEOS-Chem: GWP_100 10.8 standard —> 8.8 with OH bias corrected (pp.5–7); 12 ± 3 in the abstract is their summary of 3D models. Table 1 (p.5): CH_4 lifetime too short in every GWP model
+  EXTRACT Paulot et al 2021, IJHE 46(24), 13446–13460; 10.1016/j.ijhydene.2021.01.088 [P, read in full] —> 0.84 mW/m^2 per Tg/yr; CH_4 46%, strat H_2O 28%, trop O_3 21%, strat O_3 5%; forcing only, no GWP; these GFDL-AM4.1 runs are what Hauglustaine's 12.8 is built on (Derwent 2023 treats the two as one study)
+
+
+Objective 3: estimates compared + spread over time (4 pages)
+  READ    Derwent 2023, IJHE 48, 8328–8341; 10.1016/j.ijhydene.2022.11.219 [P] done —> 8 ± 2
+  READ    Warwick et al 2022, BEIS report (April 2022) [P] done —> 11 ± 5
+  READ    Sand et al 2023, Commun Earth Environ 4, 203; 10.1038/s43247-023-00857-8 [P] done —> 11.6 ± 2.8
+  READ    Hauglustaine et al 2022, Commun Earth Environ 3, 295; 10.1038/s43247-022-00626-z [P] done —> 12.8 ± 5.2
+  EXTRACT Warwick et al 2023, ACP 23(20), 13451–13467; 10.5194/acp-23-13451-2023 [F] —> 12 ± 6 in text, 11.5 (6–18) in Table 3; feedback factor 1.39 and CH_4 lifetime 11.8yr where the report has 1.49 and 12.6yr; 1%/10% leak offsets 0.4%/4%
+  EXTRACT Bryant et al 2024, Front Energy Res 12, 1415593; 10.3389/fenrg.2024.1415593 [F] —> UKESM1; tropospheric-only 9.4 (9.1 at 30% NO_x); 7.8–11.2 for deposition 44–73 Tg/yr
+  EXTRACT Skeie et al 2025, ACP 25(9), 4929–4942; 10.5194/acp-25-4929-2025 [F] —> OsloCTM3; 12.2–12.6 across leak sizes; 10.2–14.2 across 7 sites; inside the 1σ band Skeie quotes for Sand (9.4–13.9) except 2 remote sites; 11.6 ± 2.8 would be 8.8–14.4 —> check which band in the PDF
+  EXTRACT Field & Derwent 2021, IJHE 46(58), 30190–30203; 10.1016/j.ijhydene.2021.06.120 [P, read in full] —> 3.3 ± 1.4 (TROPOS; troposphere only; 100 Tg pulse); UK domestic gas leakage 2.3% from ethane tracer
+  EXTRACT Bertagni et al 2022, Nat Commun 13, 7706; 10.1038/s41467-022-35419-7 [F] —> own GWP_100 15.6, GWP_20 44 from a minimal box model —> the kind Chen 2024 shows overstates the CH_4 response (also obj 4c)
+  CITE    Derwent et al 2001, Climatic Change 49(4), 463–487; 10.1023/A:1010648913655 [P] —> 5.8 (STOCHEM; troposphere only)
+  CITE    Derwent 2018, "Hydrogen for heating: atmospheric impacts – a literature review", BEIS (30 Nov 2018), gov.uk [F] —> 4.3 (0–9.8) (p.3, p.21); BEIS Research Paper No. 21. Sand's reference 14 points to a different Derwent 2018 paper —> cite this report directly
+  CITE    Derwent et al 2020, IJHE 45(15), 9211–9221; 10.1016/j.ijhydene.2020.01.125 [P] —> 5 ± 1 (STOCHEM-CRI; troposphere only)
+
+
+Objective 4a: how much leaks + infrastructure (part of 3.5 pages)
+  READ    Frazer-Nash Consultancy for BEIS 2022, "Fugitive hydrogen emissions in a future hydrogen economy" (8 Apr 2022) [F] —> UK bottom-up by stage; total 0.96% (50% confidence), 1.50% (99%) (p.8); electrolysis venting 3.32% —> 0.24% with recombination (p.6); pipe-wall permeation NOT included (p.28)
+  EXTRACT Esquivel-Elizondo et al 2023, Front Energy Res 11, 1207208; 10.3389/fenrg.2023.1207208 [F] —> whole-chain estimates 0.2–20%; none empirically measured
+  EXTRACT Westra et al 2024, Sci Rep 14, 24147; 10.1038/s41598-024-76373-2 [F] —> first field detection; up to 4.2% of daily production at a Dutch chemical park that vents surplus H_2 —> proves measurement is possible; not a leak rate for H_2 infrastructure
+  EXTRACT Cooper et al 2022, Sci Total Environ 830, 154624; 10.1016/j.scitotenv.2022.154624 [P] —> green chain 2.6% (0.1–6.9%); blue 1.4% (0.1–4.3%) (p.6); rates scaled from gas data; CO_2e rests on the pre-2022 GWP range 1.9–9.8 (p.2)
+  EXTRACT Arrigoni & Bravo Diaz 2022, JRC130362 / EUR 31188 EN; 10.2760/065589 [F] —> JRC expert-workshop summary: Air Liquide stage figures (pp.15–17); ~2% lost by 2050; most sensors cannot go below 100 ppm (p.28)
+  EXTRACT Duroha et al 2025, Front Energy Res 13, 1650479; 10.3389/fenrg.2025.1650479 [F] —> US inventory: 0.79% (0.26–1.32%) of production capacity
+  EXTRACT Jülich et al 2025, Front Energy Res 13, 1548309; 10.3389/fenrg.2025.1548309 [F] —> German H_2 core network 2032: ~173 t H_2/yr; leak rates scaled from CH_4 data, not measured
+  EXTRACT Shin et al 2026, IJHE 239, 155404; 10.1016/j.ijhydene.2026.155404 [P] —> wall permeation < 10.5 g/km/day at 2–10 bar (p.8); "relatively insignificant" vs joint and component leaks
+  CITE    E4tech for BEIS 2019, "H_2 emission potential literature review", BEIS Research Paper 22 (12 Apr 2019) [P] —> what Warwick cites for leak-rate uncertainty (report p.18)
+  CITE    Melaina, Antonia & Penev 2013, NREL/TP-5600-51995 [T] —> blending review; I could not open it, so its permeation figures are unconfirmed
+
+
+Objective 4b: detection + odorisation
+  READ    Environment Agency / NPL 2025 (Feb), "Net zero: hydrogen monitoring review" SC230001/R [F] targeted —> "no established methods" for emissions to atmosphere (p.6); 7 instruments tested (p.36–37); sensitivity ~ppm at best, others ~1% v/v (p.42)
+  EXTRACT Mouli-Castillo et al 2020, IJHE 45(20), 11875–11884; 10.1016/j.ijhydene.2020.02.095 [P] —> 5 odorants; 4 pass; the only fuel-cell-compatible one (5-ethylidene-2-norbornene) fails
+  EXTRACT Mouli-Castillo et al 2021, IJHE 46(27), 14881–14893; 10.1016/j.ijhydene.2021.01.211 [F] —> 3 sulphur odorants tested in H_2 and methane; H_2 + NB smelled from 500 ppm gas-in-air, methane + NB only at 10,000 ppm
+  CITE    Kopasz 2007, IJHE 32(13), 2527–2531; 10.1016/j.ijhydene.2006.11.001 [A] —> odorants degrade fuel cells and must be removed; detectors more reliable than smell
+  CITE    Hübert et al 2011, Sens Actuators B 157(2), 329–352; 10.1016/j.snb.2011.04.070 [T] —> sensor-type review
+
+
+Objective 4c: net result
+  READ    Ocko & Hamburg 2022, ACP 22(14), 9349–9368; 10.5194/acp-22-9349-2022 [F] —> impact vs fossil at 1% and 10% leak: green at 10% only ~halves impact over 20yr, ~80% cut over 100yr; blue can be worse than fossil for decades. Not a break-even calculation
+  (Bertagni et al 2022, listed under obj 3) [F] —> green H_2 lowers CH_4 only if H_2 losses < 9 ± 3%; blue only if CH_4 losses < 1%
+
+
+Count: READ 9 (4 done), EXTRACT 19, CITE 16 = 44
+Hard/soft: 37 peer-reviewed or IPCC; 7 government/agency reports (BEIS ×4, JRC, NREL, Environment Agency); 0 commentary or press

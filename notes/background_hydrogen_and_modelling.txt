@@ -1,0 +1,108 @@
+LRP Background Notes: Hydrogen in the atmosphere + modelling methods
+
+
+Part 1: Hydrogen in the atmosphere
+
+• How much: ~0.5ppm (500ppb) everywhere, well mixed. For scale: CH_4 ~1.9ppm; CO_2 ~420ppm
+• Sources: ~80 Tg/yr (1 Tg = 1 million tonnes). Half from combustion + biomass burning; half made in the air when CH_4 and other hydrocarbons are oxidised
+• Sinks (the most important fact in the topic):
+   ◦ 1. Soil bacteria eat it: ~60 Tg/yr, ~3/4 of the total
+   ◦ 2. Reacts with OH in the air: ~20 Tg/yr, the remaining 1/4
+• Only the OH sink causes warming. H_2 eaten by soil has no climate effect —> climate impact of a leak depends on the fraction of leaked H_2 that survives long enough to meet OH rather than being absorbed by the ground
+• Soil sink is poorly known: measured at a few field sites, scaled up to the whole planet
+
+Lifetime:
+• Lifetime = amount in the atmosphere ÷ rate of removal
+• e.g. 150 Tg in the atmosphere, 75 Tg/yr removed —> lifetime 2yr
+• Separate lifetime per sink: wrt soil alone ~2.5yr; wrt OH alone ~8yr
+• Combine like resistors in parallel: 1/τ = 1/τ_soil + 1/τ_OH —> ~1.9yr overall
+• Soil lifetime dominates because it is the shorter one
+• "Soil sink is the biggest uncertainty" = nobody knows whether 2.5yr is really 1.7 or 2.9; that range alone shifts the GWP by ~50%
+
+Why it warms (brief):
+• H_2 + OH —> H_2O + H; uses up OH
+• Less OH —> CH_4 (also removed by OH) lasts longer —> CH_4 conc rises
+• H radical —> HO_2 —> makes O_3 in polluted air
+• H_2 reaching the stratosphere oxidises to H_2O there, where water is scarce and radiatively important
+• 3 warming effects; none from H_2 directly
+
+
+Part 2: What an atmospheric chemistry model actually is
+
+• Every model here does the same thing: divide the atmosphere into boxes; track the conc of each chemical in each box
+• Each timestep (e.g. 30 min), update each box by:
+   ◦ 1. Add emissions
+   ◦ 2. Run the chemical reactions (known rate constants)
+   ◦ 3. Move air between neighbouring boxes using wind fields
+   ◦ 4. Remove gases at the surface (deposition) or by rain
+• Repeat for as many years as needed
+• Only real differences between models = how many boxes and how many chemicals
+
+Model types:
+• Box model (0D): one box for the whole atmosphere; no transport; ~4 species, 4 equations; runs in seconds. Fine for gases that live long enough to mix globally (H_2 ~2yr, CH_4 ~10yr; interhemispheric mixing ~1yr). Warwick uses one as a calculator
+• 2D model (Derwent's TROPOS): latitude × altitude only; 24 lat bands × 12 height layers = 288 boxes; assumes everything at the same latitude/height is identical —> ignores longitude; cannot tell London from Kansas. Fast enough to run 100yr many times. Weaknesses: crude transport; stops at 24km —> no stratosphere
+• 3D model (Warwick's UKESM1): full latitude × longitude × altitude grid; tens of thousands of boxes; up to 85km; 81 chemicals, 291 reactions; plus clouds, aerosols, radiation. Same family as IPCC climate models. Realistic but very slow: one 40yr run = major computing job
+• Speed difference drives everything: Derwent can afford 100yr pulse runs + thousands of repeats —> pulses + sensitivity sweeps. Warwick cannot —> shortcuts (Part 3)
+
+
+Part 3: The three experiment types
+
+• Pulse: dump an extra amount of H_2 in once; watch the atmosphere recover over 100yr. Matches the formal GWP definition. Derwent: 200 Tg in one January, follow CH_4 and O_3 for a century
+• Step change: raise the conc permanently and hold it; atmosphere settles to a new equilibrium (steady state) after a few decades. Warwick: hold H_2 at 2000ppb forever; read off what OH, CH_4, O_3 settle to
+• Steady state —> GWP conversion: GWP is defined for a pulse but Warwick ran step changes —> need maths to convert
+   ◦ Standard maths = Fuglestvedt et al (2010), written for aviation NO_x
+   ◦ Catch: NO_x disappears in days, so the maths assumes the emitted gas vanishes instantly and only the CH_4 response has a timescale
+   ◦ H_2 lives ~2yr, keeps hitting OH, CH_4 response peaks years later
+   ◦ Warwick rewrote the equations to include H_2's own lifetime (Annex 1, Fig A1) —> genuine methodological contribution; also why they argue Derwent's older short-run estimates were too low
+
+
+Part 4: What GWP actually is, numerically
+
+• Radiative forcing = extra energy trapped, in W per m^2 of Earth
+• Emit 1kg of a gas —> forcing is high at first, decays as the gas is removed
+• GWP integrates that forcing over 100yr ÷ the same integral for 1kg of CO_2
+• For H_2 there is no direct forcing —> integrate the forcing from the extra CH_4, extra O_3 and extra strat H_2O the H_2 caused
+• Each has its own timescale: O_3 weeks; CH_4 ~a decade; strat H_2O ~8yr —> why both papers spend so long on decay time constants; the integral depends on them
+• GWP_100 = 11 means 1kg leaked H_2 causes as much integrated warming over a century as 11kg CO_2
+• GWP_20 is bigger (33) because H_2 effects are front-loaded while CO_2 lasts centuries
+
+Converting model numbers into forcing:
+• Models give conc changes (ppb of CH_4; Dobson units of O_3)
+• To get W/m^2: multiply by a "radiative efficiency" = fixed IPCC number (W/m^2 per ppb CH_4). Standard approach; both papers use it for the GWP
+• ERF = the alternative: let the 3D model compute the energy imbalance directly, including what clouds and aerosols do in response
+• Warwick does both: model's direct calculation gives ~2× the CH_4 forcing that the IPCC factors give —> the reported GWP may be missing real cloud/aerosol effects
+
+
+Part 5: Monte Carlo, and why "14 replicates" matters
+
+• A model has hundreds of input numbers: rate constants, emission totals, deposition velocities; each uncertain
+• Monte Carlo = randomly vary all of them within plausible ranges; run the model; repeat thousands of times; see how much the answer scatters
+• Derwent: 5000 runs; each tested against observed histories of CH_4, CO, H_2, O_3 from 1950–2010; keep only the runs that match
+• Most passed CH_4 and CO tests; only 14 passed the European O_3 test
+• —> his entire uncertainty range (±2) comes from the spread across 14 model versions. Thin basis; why his error bars are wide enough to swallow the disagreements he is trying to resolve
+
+
+Part 6: Lower boundary condition, and why it hides the soil sink
+
+• In a 3D model you can either emit a gas (Tg/yr from the surface; model works out conc from sources and sinks) or pin the surface conc at a fixed value and let the air above adjust
+• Pinning = "lower boundary condition" (LBC). Standard for CH_4 because CH_4 takes ~50yr to equilibrate; nobody can afford that spin-up in 3D
+• Warwick pins both H_2 and CH_4
+• Consequence for the critique: if the surface conc is pinned, the model never calculates how much H_2 goes into the soil. The soil sink is not in the model at all; it is implicitly inside whichever conc they chose
+• —> paper identifies the soil sink as the dominant uncertainty, then uses a method that cannot test it
+• Handled by taking published soil lifetimes (1.7–2.9yr) and running the GWP formula with each —> most of the ±5
+
+
+Part 7: Units
+
+• ppb / ppm: parts per billion / million by volume; 1ppm = 1000ppb
+• Tg: teragram = 10^12 g = 1 million tonnes; emissions and burdens
+• DU: Dobson unit = thickness of the O_3 column if compressed to the surface
+• W/m^2: radiative forcing; all human CO_2 to date ~2 W/m^2
+• mW/m^2 per ppb: radiative efficiency = forcing per unit conc
+• Feedback factor: how much a CH_4 perturbation is amplified by CH_4's own effect on OH; 1.0 = none; typical 1.2–1.4; UKESM1 = 1.49
+
+
+Rereading the two papers with this in hand
+
+• Derwent = fast 2D model; run as pulses for 100yr; repeated with varied inputs to measure how much each modelling choice moves the GWP; sensitivities then used as correction factors to put 5 older papers on the same footing; own model covers troposphere only —> stratosphere imported from someone else
+• Warwick = slow realistic 3D model; run as permanent step changes with concs pinned; box model as a side calculator (leak rate —> conc; H_2 conc —> CH_4 response); steady-state results converted to a pulse GWP with rewritten equations; includes the stratosphere, which earlier work did not

@@ -1,0 +1,296 @@
+LRP 241 Extraction (19 Nov 2026): all 25 sources other than your four starter/meeting-2 papers
+Batch 1 = 19 read online through a web reader; batch 2 = your 6 PDFs, read directly from the files (marked [file])
+
+How this was read:
+• Through a web reader pointed at each publisher's own PDF; I never held the files —> page and table numbers are as the reader reported them
+• Every number here is extracted but unchecked —> spot-check before it goes in the report; check ALL of the "Conflicts" block
+• "not found" = the reader could not find it in the main text (often it sits in a supplement)
+• Still yours to read (targeted): Krishnan; Ocko & Hamburg; Frazer-Nash; EA/NPL —> the entries below give the pages to go to
+
+
+Conflicts to check first:
+   1. Warwick report vs Warwick ACP paper: CH_4 feedback factor 1.49 (report p.55) —> 1.39 (ACP p.13461); CH_4 perturbation lifetime 12.6yr (report p.71) —> 11.8yr (ACP p.13460); total 10.9 (6.4–15.3) (report Table 10) —> 11.5 (6–18) (ACP Table 3 p.13461), quoted as 12 ± 6 (p.13462). ACP gives no explanation —> this is the answer to Q4: the two are different calculations, not a rounding
+   2. Skeie says the 1σ band 9.4–13.9 is "shown in Sand et al. (2023)" (p.4934) —> not in Sand's main text; 11.6 ± 2.8 gives 8.8–14.4 —> check Sand's supplement
+   3. H_2:CH_4 leak ratio in turbulent flow from the same volumetric 2.8: Frazer-Nash mass ratio ~0.35 (p.24) vs Jülich 0.21 (p.9) —> check Jülich's pressure/density assumptions
+   4. Krishnan Table 3 (p.9517): 7.74yr and 3.41yr are not clearly labelled; Table A1 (p.9535) gives 6.9yr atmospheric and 3.3yr soil for OsloCTM3 —> read the table header yourself
+   5. Westra's 4.2% is "relative to estimated daily production" (p.10) at a chemical park where surplus by-product H_2 is vented (p.5) —> not a leak rate for purpose-built H_2 infrastructure
+   6. Ocko & Hamburg, worst-case green over 100yr: "around 80%" (abstract p.9349); 85% (p.9360); "three-quarters" (p.9361) —> take the value from Fig 4 yourself. GWP_20 range read as [20–40] (p.9352); Warwick report says 20–44
+   7. Jülich Table 5 (p.10): components sum to 166 t, total given as 173 t; 2,160 t CO_2e stated vs 173 × 11.6 ≈ 2,007
+   8. Source of the 1–10% leak range: ACP paper cites Schultz 2003 and Warwick 2004 (p.13453); the report cited E4tech 2019 (p.18)
+   9. Cooper's CO_2e results rest on the pre-2022 GWP range 1.9–9.8 (p.2); exact value used not stated —> "29 times lower than gas" (p.10) is too generous against 11.6
+   10. Ehhalt & Rohrer give Xiao's soil sink as 84 ± 8 (p.522) and as 85 ± 5 (Table 1 p.507; p.529)
+   11. MY ERROR, now fixed: Yang's standard GEOS-Chem GWP_100 is 10.8 (p.5), corrected to 8.8 (p.7). The "12 ± 3" in the abstract is their summary of current 3D models, not GEOS-Chem. Earlier tonight I "corrected" 10.8 to 12 ± 3 —> that change was wrong and is reversed everywhere
+   12. Soil sink now has four "current" values: Ouyang 50.0 ± 18.0 Tg/yr bottom-up (p.621); Krishnan 49–77 constrained; Sand 59 harmonised; Ehhalt & Rohrer 60 (+30/−20) —> Ouyang sits at the bottom of Krishnan's range
+   13. Ouyang's 0.02 °C: abstract says from "rising atmospheric H_2 between 2010 and 2020" (p.616); main text says "with respect to the preindustrial period" (p.621) —> read the Methods before quoting it
+   14. Yang Table 1 (p.5): every 3D model in the GWP literature has CH_4 lifetime against OH 15–26% too short (8.3–9.5yr vs 11.2 ± 1.3) and feedback factor 1.39–1.45 vs IPCC 1.30–1.34 —> one mechanism behind conflict 1 and Sand's high feedback factors
+
+
+OBJECTIVE 1: chemistry + H_2 budget
+
+Ehhalt & Rohrer 2009 (Tellus B 61, 500–535) [journal's open-access PDF]
+• Sources, Tg/yr (Table 1 p.507; abstract p.500): fossil fuel 11 ± 4; biomass burning 15 ± 6; N_2 fixation ocean 6 ± 3, land 3 ± 2; from CH_4 23 ± 8; from other VOC 18 ± 7 —> 76 ± 14
+• Sinks: OH 19 ± 5; soil 60 (+30/−20) —> 79; burden 155 ± 10 Tg; lifetime 2.0yr
+• ~50% of production is anthropogenic (p.529)
+• Soil sink sits in two clusters the authors call "clearly not compatible" (p.522): ~55 Tg/yr bottom-up (Hauglustaine & Ehhalt 55; Price 55; Sanderson 58.3) vs ~86 top-down (Rhee 88 ± 11 from isotopes; Xiao 84 ± 8 from inversion) (pp.521–522)
+• They pick 60 and stretch the upper error to reach the high cluster (p.522) —> this is where +30/−20 comes from
+• Why they favour the low cluster: a high soil sink needs more H_2 from VOC, which breaks the CO budget (p.500, p.522)
+• Deposition velocity 0.01–0.1 cm/s across biomes; uptake peaks near 10% soil moisture and is zero when dry or above 23–30%; top few cm only; snow and wet pores block diffusion (p.518)
+• OH sink: k = 2.8 × 10^−12 exp(−1800/T) cm^3/s; the ±5 comes mainly from the CH_3CCl_3 lifetime (p.517)
+• Mixing ratio 531 ± 6 ppb (1991–96) (p.501); NH lower by ~3% (p.503) —> ~70% of soil uptake is in the NH (p.528) even though ~64% of sources are too (p.529)
+• No long-term trend (p.502)
+• Hydrogen economy (Sect 6 p.530): early studies assumed 3–20% leakage —> burden ×1.3 (Schultz; "more realistic") to ×4 (Tromp); Warwick 2004 finds a small stratospheric impact; no GWP and no climate statement
+• Open needs: year-long soil-uptake field studies across ecosystems; H_2 production from VOC (p.530)
+
+Krishnan et al 2026 (ACP 26, 9509–9539)
+• Models: 6 (GFDL-AM4.1, LMDZ-INCA, OsloCTM3, UCI CTM, UKCA, WACCM6) (Table 1 p.9512) —> Sand's 5 control runs + newer WACCM6 (Sect 2.1 p.9511)
+• Constrained soil sink: 49–77 Tg/yr (Sect 3.4 p.9519; Fig 10 p.9522); raw model spread 44.3–73 (Table 2 p.9513)
+• Atmospheric production: 37–60 Tg/yr (abstract p.9509; Sect 3.4 p.9519); raw 34–56 in text (p.9513) but 33.9–50.7 in Table 2 —> internal mismatch
+• Atmospheric (OH) loss: 15–30 Tg/yr (abstract p.9509; p.9522); raw 21–28 in text (p.9514)
+• Constraints used: NOAA surface H_2 552.8 ppb in 2021 (p.9509); δD ~130‰ (p.9510); box model with 530–560 ppb and δD 130–160‰ (pp.9517–9519)
+• Lifetime relation: 1/τ = 1/τ_OH + 1/τ_soil (Eq 1 p.9511); no total lifetime stated
+• Burden: not found
+• GWP: none calculated; says GWP "depend[s] on its atmospheric perturbation lifetime" (p.9510)
+• Remaining uncertainty: each budget term + isotopic values; no direct OH observations (p.9514, p.9519, p.9522)
+
+Paulot et al 2024 (ACP 24, 4217–4229)
+• Model: GFDL-AM4.1, 2004–2019; observations 2010–2019 (pp.4218–4219)
+• Total source 74 ± 1 Tg/yr; ~60% photochemical (p.4220): CH_4 oxidation ~27; BVOC ~14; anthropogenic ~13; biomass burning ~8; marine 6; soil 3 (pp.4219–4220)
+• Soil uptake = 71% of total sink; lifetime 2.5yr (p.4220)
+• Model low by ~10 ppb at the surface (abstract p.4217); 10–15 ppb (p.4223)
+• Observed trend 1.4 ± 0.7 ppb/yr (p.4222); model shows none
+• Missing source ~2–2.5 Tg/yr (2010) —> 3–4 Tg/yr (2019) (p.4223); "most likely" underestimated anthropogenic emissions incl. leakage from H_2 facilities (abstract)
+• Soil sink "most likely" strengthened, mainly NH: soil moisture, temperature, snow cover (abstract); Mace Head deposition velocity +1.2%/yr 1994–2020 (p.4224)
+• Gaps: minimum soil moisture for uptake unknown; few observational constraints (p.4218, p.4224)
+• GWP: none; cites Sand
+
+
+OBJECTIVE 2: how GWP is estimated
+
+Chen, Solomon & Stone 2024 (Front Energy Res 12:1463450)
+• Model: 0D photochemical box model, 66 reactions (Sect 2.2 p.3); pulse of 53 ppb H_2, ~10% of burden (p.3, p.6)
+• GWP_100 10 (+7/−4); GWP_20 28 (+18/−11) (Table 5 p.8)
+• GWP_100 by component: CH_4 4.4; trop O_3 2.4; strat H_2O 2.7 (Table 5 p.8)
+• Soil loss rate 0.4/yr; soil lifetime range 1.7–2.9yr (p.2; Table 1 p.3); overall H_2 lifetime: not found
+• CH_4 feedback factor: 1.4 full mechanism; 1.7 four-equation system (Sect 3.1 p.6)
+• Four-equation system overstates peak CH_4 response by ~85%; time-integrated by 123% (p.6)
+• Stated limit: no spatial resolution —> cannot say whether the global GWP depends on where soil loss happens (p.9)
+
+
+OBJECTIVE 3: estimates compared + spread over time
+
+Warwick et al 2023 (ACP 23, 13451–13467)
+• Model: UKESM1; 40yr steady-state runs, last 25 analysed (p.13454); H_2 and CH_4 as fixed lower boundary conditions (p.13452); H_2 at 500 (base), 750, 1000, 1500, 2000 ppb (Table 1 p.13454)
+• Method: extends Fuglestvedt 2010; Eqs 1–5 (pp.13459–13460)
+• GWP_100 12 ± 6 in text (p.13451, p.13462); Table 3 total 11.5 (6–18) (p.13461)
+• GWP_20 34.8 (19–51) AR5 basis; 34.4 (19–51) AR6 basis (Table 3 p.13461)
+• Components (AR6 basis): CH_4 5.2; trop O_3 3.2; strat H_2O 3.1 (Table 3) —> ~2/3 troposphere, 1/3 stratosphere (p.13462)
+• H_2 lifetime 1.96yr (1.4–2.2) (p.13460); soil uptake scales with H_2 (constant deposition velocity) (p.13453)
+• CH_4 feedback factor 1.39; perturbation lifetime 11.8yr (pp.13460–13461)
+• Uncertainty covers: soil-uptake lifetime; forcing scaling factors; AGWP_CO2. Excludes: chemical lifetimes; stratospheric response; aerosol and cloud responses (pp.13462–13463)
+• Leakage: 1% and 10% —> ~9 and ~96 Tg H_2/yr (p.13453) —> offsets ~0.4% and ~4% of ~27,200 Tg CO_2e/yr saved (p.13463)
+• Caveat they state: model ERF sensitivity to CH_4 ~65% larger than the scaling factors imply (p.13463) —> GWP uses the smaller figure
+
+Bryant et al 2024 (Front Energy Res 12:1415593)
+• Model: UKESM1 atmosphere-only v11.1 (p.2); +10% surface H_2 as a lower boundary condition; separate +10% CH_4 run scaled via Eq 1 (pp.3–4); 15yr spin-up, final year analysed (p.4)
+• Tropospheric GWP_100: 9.4 at present NO_x (CH_4 5.5 + O_3 3.9); 9.1 at 30% NO_x (CH_4 5.5 + O_3 3.5) (Tables 2–3 p.11)
+• Deposition 44–73 Tg/yr —> 7.8–11.2 (p.11); base deposition 57 Tg/yr (pp.9–10)
+• Stratospheric component not estimated (p.11); quotes Warwick 2023 tropospheric 8.4 of 11.5 total
+• Conclusion: current GWP "can therefore be applied to future scenarios of differing NO_x"; VOC and CO not varied (p.12)
+• H_2 lifetime and feedback factor: not found in text
+
+Skeie et al 2025 (ACP 25, 4929–4942)
+• Model: OsloCTM3; emissions-driven for H_2; CH_4 concentration-driven (p.4931) —> Sand was mostly concentration-driven (p.4934)
+• Leak size 0.1–100 Tg/yr —> 12.2–12.6 (Sect 3.1 p.4933)
+• Location (1 Tg/yr point sources; Table 1 p.4933): South Pacific 14.2; Antarctica 14.2; Arctic 11.7; 4 continental sites 10.2–11.9 —> 19% below to 14% above the base 12.5
+• 2050 backgrounds: 12.9 (SSP119) to 13.5 (SSP585) (p.4936)
+• H_2 lifetime 2.35yr total; 7.02yr atmospheric; 3.53yr soil (Table 3 p.4935); perturbation lifetime 1.77–2.59yr across sites (p.4938)
+• CH_4 feedback factor 1.46 now —> 1.71 in SSP434 (Table 5 p.4937); CH_4 GWP_100 27.0 —> 28.6–30.5 (p.4937)
+• Conclusion: GWP higher further from soil-sink regions (pp.4938–4939); regional GWP reporting "not necessary for hydrogen" (p.4939)
+• Limits they state: soil sink = largest uncertainty; model CH_4 lifetime 6.85yr vs assessed 9.1 ± 0.9 (p.4938)
+
+Bertagni et al 2022 (Nat Commun 13:7706) [also objective 4c]
+• Model: 4-species steady-state box model (CH_4, H_2, CO, OH) + lumped OH sink (p.6); extends Prather's CH_4–CO–OH system
+• Parameters: H_2 lifetime ~2yr; soil uptake 75% of removal (k_d = 0.38/yr); OH split 45% X, 36% CO, 14% CH_4, 5% H_2 (Table 1 p.6); feedback factor ~1.5 (p.7)
+• Own GWP_100 15.6; GWP_20 44 (CH_4-mediated part 7.8 and 22) (Methods p.7) —> "upper range" of published values; compares with Warwick 11 ± 5 and 33 (+11/−13)
+• Critical H_2 loss: green ~9% (9 ± 3% in Discussion p.5; 8–10% in Results p.4); blue 7% at 0.2% CH_4 leak; ~4.5% at 0.5%; ~zero at 1% (p.4)
+• Worst case (blue, 2% CH_4 loss): up to 22% of climate benefit offset over 100yr; 65% over 20yr (p.5)
+• Soil sink ±20% shifts the threshold (Fig 4 p.5); no number given
+• Limits they state: no 3D transport; O_3 and strat H_2O enter only via the radiative estimate, not the box model (p.5, p.7)
+
+Derwent 2018 (BEIS Research Paper No. 21; dated 17 Oct 2018, cover Nov 2018)
+• GWP_100 4.3 (95% range 0–9.8) (p.3, p.21)
+• Derivation: starts from Derwent 2001's 5.8 —> adjusted for OH/soil sink split (7.8; 2.1–13.5) —> O_3-to-CH_4 slope (3.1; 0–6.2) —> IPCC 2013 forcing (4.3; 0–9.8) (p.14, pp.20–21)
+• Admits it rests on one model and one older study (p.21)
+• 1% leak realistic for UK domestic use (pp.3–4, p.23) —> cuts 54.0 Mt CO_2/yr saving to 53.7 (0.6%) (p.23)
+• Notes Warwick 2004 used a 5% leak scenario (p.11)
+
+
+OBJECTIVE 4a: how much leaks + infrastructure
+
+Frazer-Nash for BEIS 2022
+• Method: mechanisms per element from industry input + natural-gas data; Bayesian network, not Monte Carlo (p.39); 50% = median, 99% = "credible maximum" (p.11, p.39)
+• Total: 0.96% (50%); 1.50% (99%) of 476 TWh central scenario (p.8)
+• By stage (50% / 99%) (p.6; Table 4 pp.39–40): electrolysis with venting 3.32 / 9.20; electrolysis with recombination 0.24 / 0.52; CCUS-enabled 0.25 / 0.50 (assumed); transmission 0.04 / 0.48; distribution 0.26 / 0.53; salt cavern 0.02 / 0.06; above-ground storage 2.77 / 6.52; gas trailers 0.30 / 0.66; liquid trailers 3.76 / 13.20; residential 0.30 / 0.69; refuelling 0.25 / 0.89; fuel cells with purging 1.36 / 2.64
+• Distribution network = largest single emitter by volume (p.8, p.42)
+• H_2 vs CH_4 through the same leak (p.24): laminar volumetric ~1.2, mass ~0.15; turbulent volumetric ~2.8, mass ~0.35; H21 tests measured 1.1 and 2.8 (p.27)
+• Porosity: >90% polyethylene by 2032 (p.26); permeation through pipe walls NOT included —> H21 tests did not consider "long term, slow permeation of gas through the asset materials" (p.28); flagged for further work (p.48)
+• Homes: boiler start-up/shutdown 0.13%; pipework ~0.32%, "likely to be a considerable overestimate" (p.36)
+• Odorant, sensors, leak detection: not found
+• Assumed, not calculated: CCUS production 0–0.5% (p.22); process industry 0–0.5% (p.38); electrolysis purge upper bound 10% (p.19)
+
+Esquivel-Elizondo et al 2023 (Front Energy Res 11:1207208)
+• Whole chain 0.2–20% (pp.4–5); climate studies usually assume 1–10% (p.5)
+• By component (p.4): electrolysis 0.03–9.2%; blue (SMR + CCS) 0.0–1.5%; grey 0.5–1.0%; liquefaction 0.15–10.0%; transmission pipes 0.02–5.0%; distribution pipes 0.0003–5.0%; above-ground storage 2.8–6.5%; gas trucks 0.3–2.3%; liquid trucks 2.0–13.2%; liquid handling 2.0–20%; gas refuelling 0.25–3.0%; liquid refuelling 2.0–15.0%; power generation 0.01–3.0%
+• Basis: 5 core studies (van Ruijven 2011; Arrigoni 2022; Cooper 2022; Frazer-Nash 2022; Fan 2022) (p.2); all from assumption, natural-gas proxy, lab work, or simulation (pp.3–4)
+• No direct measurements (p.2); commercial sensors read ppm —> site quantification needs ~10 ppb and a response of seconds (p.2, p.5)
+• Widest uncertainty: everything liquid; electrolysis (p.4)
+
+Westra et al 2024 (Sci Rep 14:24147)
+• Method: AirCore sampler on a car and a drone + gas chromatography; precision < 2 ppb (pp.2–3)
+• Site: Chemical Park Delfzijl (~4 km^2): chlor-alkali electrolysis (surplus H_2 vented); H_2O_2 plant with SMR; fuelling station with storage + compressor (p.5)
+• Emission rates: 0.5–2.1 g/s (mass balance); 0.1–2.0 g/s (Gaussian plume); mass balance 2.3× higher on average (p.10)
+• Loss up to 4.2% "relative to estimated daily production" (p.10); no single uncertainty given
+• Sources: "leakage, purging and storage" (p.11); no split between them
+• Sample: 7 car transects; 4 drone flights; 3 good downwind transects (p.6); park "not fully representative" of the H_2 value chain (p.5)
+• States that modelled 1–10% loss estimates have "not been validated at all by actual measurements" (p.2)
+
+Arrigoni & Bravo Diaz 2022 (JRC130362)
+• Industry figures, mostly Air Liquide (pp.15–17): electrolysis ~0.2% now —> 0.03% in 2030; SMR 0.0001% (flared); tube trailers < 1%; liquid delivery ~10%; refuelling 3–8.5%; compressed chain to station ~4.2%; liquid chain up to 20%; pipelines ~1% —> < 0.7% by 2030
+• 2050: losses 13.3 Mt ≈ 2% of production; 54% production, 22% delivery, 24% end use (Table 3 p.17)
+• Repurposed gas pipes: H_2 fugitive rate 1.25–3× the CH_4 rate (SNAM citing Kiwa 2019; p.17)
+• Sensors built for 1,000–10,000 ppm (safety); emissions work needs "five orders of magnitude greater" sensitivity (p.38); most sensors cannot go below 100 ppm (p.28)
+• H_2 has no infrared absorption feature —> CH_4 optical tools do not transfer; only Raman is specific and quantitative (p.26, p.37)
+• Conclusion: 1–5% loss expected, ~2% by 2050 (p.37); renewable H_2 still a large net benefit (p.2)
+• Odorants: not found
+
+Cooper et al 2022 (Sci Total Environ 830:154624) [Imperial's open repository copy; published version]
+• Method: emissions = throughput × emission factor per stage; downstream rates from natural-gas data adjusted for H_2 properties; "no H_2 measurement studies" exist (pp.4–5); 20,000 Monte Carlo runs (pp.5–6)
+• Whole supply chain: green 2.6% (0.1–6.9%); blue and biomass 1.4% (0.1–4.3%) (Sect 3.1.1 p.6; Fig 3 p.7)
+• By stage (Table 2 p.6): production blue 0.55% (0.10–1.00%), green 2.05% (0.10–4.00%); compression ~0.18%; liquefaction ~0.33% (up to 2.2%); transmission + storage 0.03% (0.02–0.05%); distribution 0.08% (0.05–0.16%)
+• End use excluded (p.6)
+• H_2 emission rates "comparable" to CH_4 rates from gas supply; warming impact "29 (0.6 to 66) times lower" (p.10)
+• GWP: cites 1.9–9.8 from Derwent 2006/2018/2020 (p.2); GWP_100 only; exact value used not stated in the main text
+• Limits they state: flaring and maintenance excluded —> may underestimate; unknown whether H_2 leaks at the CH_4 rate; most source data rated low quality (Table 3 p.9)
+
+Duroha et al 2025 (Front Energy Res 13:1650479)
+• US total 0.063 MMTA (0.0206–0.105) = 0.788% (0.259–1.318%) of 7.971 MMTA capacity (Table 11 p.13); production, distribution, storage only —> end use excluded (p.3, p.12)
+• Factors (Table 11): SMR 0.55% (0.1–1%); electrolysis 3% (2–4%); liquid production + delivery 15% (10–20%); underground storage 0.04% (0.02–0.06%); fuelling stations 6% (2–10%); pipeline 2.46 kg/km/yr
+• Biggest: merchant SMR ~48%; liquid H_2 ~28%; captive SMR ~22% (my arithmetic from Table 11)
+• No factor in the inventory comes from large-scale H_2 measurement (p.12); only one empirical study exists (Westra 2024) (p.2)
+
+Jülich et al 2025 (Front Energy Res 13:1548309)
+• German core network 2032 (Table 5 p.10): pipelines 52 t/yr; compressors 76; pressure regulating + metering stations 38; total 173 t H_2/yr
+• Leak rates scaled from CH_4 reporting data (Table 2 p.6); all-turbulent assumption; volumetric factor 2.8 (p.9); permeation not modelled (p.8); embrittlement excluded (p.9)
+• Leakage-only climate impact −99% vs the gas network; −94% including compressor energy (p.10)
+• Transmission only (pp.2–3)
+
+
+OBJECTIVE 4b: detection + odorisation
+
+Environment Agency / NPL 2025 (SC230001/R)
+• "no established methods" for monitoring H_2 emissions to atmosphere (p.6); "There are currently no standard methods for monitoring hydrogen." (p.62)
+• Instruments give concentration; an emission rate also needs flow, a sampling strategy, and validation (p.7, p.46); "no existing correlation curves" for H_2 (p.54)
+• 7 instruments tested (pp.36–37); 4 reach roughly ppm; the rest ~1% v/v (p.42); humidity dominates below 5 ppm (p.42)
+• No commercial remote-sensing system for H_2 (p.35)
+• Expects venting from electrolysis to dominate; fugitive pipework emissions "relatively small" if purpose-built (p.56) —> an assumption, not a measurement
+• Snapshot surveys: "non-continuous leaks may be missed" (p.58)
+• Next steps: an H_2 version of the high-flow sampler; field validation against a controlled release (p.62)
+• Odorants: not mentioned
+
+
+Mouli-Castillo et al 2021, "A comparative study of odorants for gas escape detection of natural gas and hydrogen" (IJHE 46(27), 14881–14893; 10.1016/j.ijhydene.2021.01.211) [NEW source; open repository copy without page numbers]
+• 3 odorants, all sulphur-based (Table 1): NB (78% tert-butylthiol + 22% dimethyl sulfide); Standby 2 (NB in hexane); THT
+• 18 tests in a 54 m^3 room; 3–4 untrained people per test; 0–5 smell scale (Methods)
+• H_2 + NB smelled at 500, 1,000, and 10,000 ppm gas-in-air; methane + NB only at 10,000 ppm (Results; Table 2) —> authors cannot say why
+• THT in H_2: smelled at 10,000 ppm but not recognised as a gas leak (Discussion)
+• Sulphur odorants "toxic to fuel cells" (Introduction); pipe-material compatibility not tested
+• Smell works from ~500 ppm of gas in air upward —> a safety threshold; nothing here on small chronic leaks (the second half is my inference, not theirs)
+
+
+OBJECTIVE 4c: net result
+
+Ocko & Hamburg 2022 (ACP 22, 9349–9368)
+• Metric: cumulative radiative forcing from CONSTANT emissions, as a ratio to the fossil technology, over 1–100yr (Sect 2.1 p.9353); H_2 equations from Warwick 2022 (pp.9353–9354) —> not a pulse GWP
+• Inputs: H_2 lifetime 1.9yr (1.4–2.5) (Table 1 p.9354); GWP_100 11, GWP_20 33 from Warwick 2022 (p.9352); ±20% on H_2 GWP for the soil sink (p.9355)
+• Cases: H_2 leak 1% (best) to 10% (worst); CH_4 leak 1–3% for blue (pp.9355–9356); literature spans 0.3–20%
+• Green: worst case −60% [43, 76] at 10yr; best case > 95% cut (p.9359); 100yr worst case: see conflict 6
+• Blue: worst case +40% [25, 60] at 10yr; best case −65% (p.9359); 100yr: −85% best, −45% worst (p.9360)
+• Worst-case blue takes "around 50 years" to beat fossil (p.9359)
+• Measurement: empirical leak data "completely lacking" (p.9351); no commercial sensor below the flammability threshold for open air (p.9356); asks for ppb-level field instruments (p.9365)
+• Excludes: CO_2 from incomplete capture; infrastructure build; co-emitted pollutants (p.9355, p.9357)
+
+
+Still missing (blocked to me; need your Imperial login): Ouyang 2025; Yang 2025; Paulot 2021; Field & Derwent 2021; Shin 2026; Mouli-Castillo 2020
+
+
+BATCH 2: your 6 PDFs [file] —> page numbers are the journal's printed pages
+
+OBJECTIVE 1
+
+Ouyang et al 2025 (Nature 648, 616–624) [file]
+• Bottom-up global budget 2010–2020: sources 69.9 ± 9.4 Tg/yr; sinks 68.4 ± 18.1 (abstract p.616; Fig 2 p.619)
+• Sources (Fig 2 p.619): photochemical 38.4 ± 6.1 (56%) = CH_4 oxidation 26.1 ± 3.5 + NMVOC 12.3 ± 5.0 (p.619); biomass burning 11.6 ± 3.7; fossil fuel 7.5 ± 3.9; ocean N_2 fixation 4.9 ± 3.1; land N_2 fixation 3.1 ± 2.5; minor sources 3.7 ± 2.3; leakage from H_2 production 0.7 ± 0.4
+• Sinks: soil 50.0 ± 18.0 (73% of sinks; largest uncertainty); OH 18.4 ± 2.2 (pp.617, 621)
+• Lifetime 2.8yr from their two-box optimisation (p.617) —> longer than the ~2–2.5yr everyone else uses
+• Leakage assumed 1 ± 0.5% of industrial H_2 production —> 0.7 Tg/yr; "relatively unconstrained because of a lack of measurements" (p.620)
+• Trends 1990–2020: CH_4 oxidation the largest growing source (+~4 Tg in total); production leakage +0.015 Tg/yr/yr; soil and OH sinks both rising (p.617; Fig 1 p.618)
+• Surface H_2 523.4 ppb (1992) —> 543.5 ppb (2020); ~555 ppb in 2024 (p.617)
+• Uses GWP_100 11 ± 4 and GWP_20 37 ± 18 from earlier studies (p.616–617) —> no new GWP
+• Temperature: H_2 change contributed 0.020 ± 0.006 °C (abstract; p.621; see conflict 13); future SSP range 0.01–0.05 °C depending on use, leakage, and CH_4 (p.621)
+• Low-warming SSPs: cutting CH_4 cuts H_2 made from CH_4 —> H_2 warming can fall below today's at 1% leakage but rises at 10% (p.621; Fig 5 p.623)
+• Soil-sink research need: maximum biological uptake rate and soil properties (pp.621–622)
+
+Paulot et al 2021 (IJHE 46, 13446–13460) [file]
+• Model: GFDL-AM4.1, ~100 km, 49 levels (p.13447)
+• Budget 1995–2014 (Table 1 p.13447): emissions 32.3 (anthropogenic 14.3; biomass burning 9; N_2 fixation 9); chemical production 42.1; dry deposition 54.7; chemical loss 20.4; burden 157.4 Tg; lifetime 2.1yr
+• Soil removal rises 2–4% per K of warming (abstract p.13446); 2.8%/K in one scenario (p.13453)
+• Forcing experiment: +200 Tg/yr H_2 (≈ 8% leakage of a large H_2 economy) with CH_4 adjusted, feedback factor F = 1.3 (p.13454) —> +0.17 W/m^2
+• Indirect forcing 0.84 mW/m^2 per Tg/yr, or 0.13 mW/m^2 per ppb (abstract p.13446; p.13455)
+• Split: CH_4 46%; strat H_2O 28%; trop O_3 21%; strat O_3 5% (p.13454) —> matches what Hauglustaine reused
+• No GWP (abstract and conclusion)
+• Says soil removal accounts for "over 80%" of H_2 removal (intro p.13447) —> higher than Ehhalt & Rohrer's 76%
+
+OBJECTIVE 2
+
+Yang et al 2025 (GRL 52, e2024GL112445) [file]
+• Model: GEOS-Chem v14.3.0, 4° × 5°, 2016 meteorology; H_2 and CH_4 as fixed surface concentrations; +10% perturbations; 3yr spin-up, 4th year reported (pp.2–3); follows Sand's GWP framework; strat H_2O taken from Sand, not computed (p.3)
+• Problem: models underestimate OH reactivity (by 30% in remote air up to ×2–10 at continental surfaces) —> too much OH —> CH_4 and O_3 too sensitive to H_2 (p.2)
+• Fix: added missing VOC emissions + a terminal OH sink over continents (p.3) —> they say it has no mechanistic basis
+• CH_4 lifetime against tropospheric OH: 8.5yr standard —> 11.4yr modified vs 11.2 ± 1.3 observed (p.3)
+• H_2 OH sink 24 —> 18 Tg/yr; H_2 lifetime 2.3 —> 2.5yr (soil fixed at 59 Tg/yr) (p.3)
+• GWP_100: Sand ensemble recomputed 11.4 ± 1.9 (soil uncertainty excluded); standard GEOS-Chem 10.8; modified 8.8 = 20% lower (p.5; Fig 2 p.6)
+• Of the drop: CH_4 contribution −17%; O_3 contribution −31% (p.7)
+• Table 1 (p.5): CH_4 lifetime and feedback in every model used for H_2 GWP: ensemble 8.3 ± 0.9yr, f 1.45 ± 0.07; GFDL 9.5yr, 1.40; UKESM1 (Warwick 2023) 8.5yr, 1.39; IPCC AR5 11.2 ± 1.3yr, 1.34 ± 0.06; AR6 f 1.30 ± 0.07
+• Their own caveat: 20% drop still within current uncertainty, but moves the best estimate; soil sink remains the dominant uncertainty (p.7)
+• Fixed-concentration runs miss OH feedback on H_2 production: Sand's GFDL and OsloCTM gave 12.8 emission-driven vs 11.4 and 13.0 concentration-driven (p.7)
+
+OBJECTIVE 3
+
+Field & Derwent 2021 (IJHE 46, 30190–30203) [file]
+• Model: TROPOS 2-D; 65yr runs (5yr spin-up + 60yr followed), extrapolated to 100yr; 100 Tg pulse, normalised to 1 Tg assuming linearity; 14 Monte Carlo replicates for uncertainty (p.30196)
+• GWP_100: H_2 3.3 ± 1.4; CH_4 29.2 ± 8 (abstract p.30190; pp.30196–30197) —> troposphere only (CH_4 + O_3)
+• UK domestic gas leakage 0.64 Tg CH_4/yr = 2.3% of consumption, from ethane as a tracer at London Eltham (pp.30192–30193) —> ~1.7× the national inventory
+• US domestic leakage 0.69–2.9 Tg CH_4/yr (0.5–2.1%) (p.30195)
+• Illustrative 1% H_2 leak offsets ~0.3–0.4% of the saving (p.30199) —> perfectly sealed green H_2 saves 76 Mt CO_2e/yr in the UK (abstract)
+• Authors say they could not quantify future H_2 leakage with any certainty (p.30199)
+
+OBJECTIVE 4a: porosity
+
+Shin et al 2026 (IJHE 239, 155404) [file]
+• Measured H_2 permeation through MDPE and HDPE: lab desorption (TDA) at 100–2,500 psi + direct pipe tests at 10 bar (pp.2–5)
+• Loss through the pipe wall: < 10.5 g/km/day at 2–10 bar, room temperature (abstract; Conclusion p.8); 6" SDR11 pipe 7.0–9.5 g/km/day measured, 7.3–10.5 by TDA; ½" SDR9.3 6.0–8.7 (p.8)
+• H_2 diffuses through PE "up to 5 times" faster than natural gas (p.2, citing ref 14)
+• HDPE-I (highest crystallinity and density) had the lowest permeability (p.6)
+• Conclusion: wall permeation "relatively insignificant" compared with leaks at joints and components (p.2, p.8)
+• My arithmetic, not theirs: 10.5 g/km/day ≈ 3.8 kg/km/yr —> compare Duroha's pipeline factor 2.46 kg/km/yr and Jülich's 6 kg/km/yr for leaks
+
+OBJECTIVE 4b: odorants
+
+Mouli-Castillo et al 2020 (IJHE 45, 11875–11884) [file]
+• 5 odorants (Table 1 p.11877): NB (78% tert-butyl mercaptan + 22% dimethyl sulphide; SGN's primary); Standby 2 (NB in hexane); THT; GASODOR S-Free (sulphur-free, acrylates; used in Germany); 5-ethylidene-2-norbornene (sulphur-free, fuel-cell compatible)
+• Method: accredited olfactometry to EN 13725; 6 trained panellists; detection threshold, intensity, hedonic tone, character (pp.11877–11878)
+• Result: 4 pass as stenching agents; 5-ethylidene-2-norbornene fails —> perceived as pleasant at every concentration (abstract; p.11879)
+• Range of the passing odorants: 20,789–148,361 odour units/m^3 (p.11879)
+• Context they give: sulphur compounds are toxic to fuel cells and no odorant in use today is fuel-cell compatible (p.11876); hydrogen LFL 4% by volume (p.11876)
+• Key engineering point: the one fuel-cell-compatible odorant tested is the one that failed —> odorising H_2 for safety conflicts with using it in fuel cells
+
