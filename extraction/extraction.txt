@@ -1,7 +1,7 @@
 LRP 241 Extraction (19 Nov 2026): all 25 sources other than your four starter/meeting-2 papers
 Batch 1 = 19 read online through a web reader; batch 2 = your 6 PDFs, read directly from the files (marked [file])
 Checked against the PDF files 19 Nov: Ehhalt & Rohrer, Derwent 2018, Bertagni, Warwick 2023, Bryant, Chen, Paulot 2024, Skeie, Krishnan, and Ocko & Hamburg —> every batch-1 figure for these 10 found in the file; page numbers match
-Also checked 19 Nov: Frazer-Nash, Esquivel-Elizondo, Cooper, and Mouli-Castillo 2021 —> all figures found; Frazer-Nash H_2:CH_4 mass ratios are on pp.24–26, not only p.24
+Also checked 19 Nov: Frazer-Nash, Esquivel-Elizondo, Cooper, Mouli-Castillo 2021, Duroha, and Jülich —> all figures found; Frazer-Nash H_2:CH_4 mass ratios are on pp.24–26, not only p.24
 
 How this was read:
 • Through a web reader pointed at each publisher's own PDF; I never held the files —> page and table numbers are as the reader reported them

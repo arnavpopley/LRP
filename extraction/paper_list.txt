@@ -67,8 +67,8 @@ Objective 4a: how much leaks + infrastructure (part of 3.5 pages)
   EXTRACT Westra et al 2024, Sci Rep 14, 24147; 10.1038/s41598-024-76373-2 [F] —> first field detection; up to 4.2% of daily production at a Dutch chemical park that vents surplus H_2 —> proves measurement is possible; not a leak rate for H_2 infrastructure
   EXTRACT Cooper et al 2022, Sci Total Environ 830, 154624; 10.1016/j.scitotenv.2022.154624 [P] —> green chain 2.6% (0.1–6.9%); blue 1.4% (0.1–4.3%) (p.6); rates scaled from gas data; CO_2e rests on the pre-2022 GWP range 1.9–9.8 (p.2)
   EXTRACT Arrigoni & Bravo Diaz 2022, JRC130362 / EUR 31188 EN; 10.2760/065589 [F] —> JRC expert-workshop summary: Air Liquide stage figures (pp.15–17); ~2% lost by 2050; most sensors cannot go below 100 ppm (p.28)
-  EXTRACT Duroha et al 2025, Front Energy Res 13, 1650479; 10.3389/fenrg.2025.1650479 [F] —> US inventory: 0.79% (0.26–1.32%) of production capacity
-  EXTRACT Jülich et al 2025, Front Energy Res 13, 1548309; 10.3389/fenrg.2025.1548309 [F] —> German H_2 core network 2032: ~173 t H_2/yr; leak rates scaled from CH_4 data, not measured
+  EXTRACT Duroha et al 2025, Front Energy Res 13, 1650479; 10.3389/fenrg.2025.1650479 [P] —> US inventory: 0.79% (0.26–1.32%) of production capacity
+  EXTRACT Jülich et al 2025, Front Energy Res 13, 1548309; 10.3389/fenrg.2025.1548309 [P] —> German H_2 core network 2032: ~173 t H_2/yr; leak rates scaled from CH_4 data, not measured
   EXTRACT Shin et al 2026, IJHE 239, 155404; 10.1016/j.ijhydene.2026.155404 [P] —> wall permeation < 10.5 g/km/day at 2–10 bar (p.8); "relatively insignificant" vs joint and component leaks
   CITE    E4tech for BEIS 2019, "H_2 emission potential literature review", BEIS Research Paper 22 (12 Apr 2019) [P] —> what Warwick cites for leak-rate uncertainty (report p.18)
   CITE    Melaina, Antonia & Penev 2013, NREL/TP-5600-51995 [T] —> blending review; I could not open it, so its permeation figures are unconfirmed
