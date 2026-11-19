@@ -12,9 +12,9 @@ Conflicts to check first:
    1. Warwick report vs Warwick ACP paper: CH_4 feedback factor 1.49 (report p.55) —> 1.39 (ACP p.13461); CH_4 perturbation lifetime 12.6yr (report p.71) —> 11.8yr (ACP p.13460); total 10.9 (6.4–15.3) (report Table 10) —> 11.5 (6–18) (ACP Table 3 p.13461), quoted as 12 ± 6 (p.13462). ACP gives no explanation —> this is the answer to Q4: the two are different calculations, not a rounding
    2. Skeie says the 1σ band 9.4–13.9 is "shown in Sand et al. (2023)" (p.4934) —> not in Sand's main text; 11.6 ± 2.8 gives 8.8–14.4 —> check Sand's supplement
    3. H_2:CH_4 leak ratio in turbulent flow from the same volumetric 2.8: Frazer-Nash mass ratio ~0.35 (p.24) vs Jülich 0.21 (p.9) —> check Jülich's pressure/density assumptions
-   4. Krishnan Table 3 (p.9517): 7.74yr and 3.41yr are not clearly labelled; Table A1 (p.9535) gives 6.9yr atmospheric and 3.3yr soil for OsloCTM3 —> read the table header yourself
+   4. RESOLVED from the PDF: Krishnan Table 3 (p.9518) headers are "Atm. Loss" lifetime 7.74yr and "Soil Uptake" lifetime 3.41yr (base case); Table A1 (p.9535) separately gives 6.9 / 3.3yr for OsloCTM3 alone
    5. Westra's 4.2% is "relative to estimated daily production" (p.10) at a chemical park where surplus by-product H_2 is vented (p.5) —> not a leak rate for purpose-built H_2 infrastructure
-   6. Ocko & Hamburg, worst-case green over 100yr: "around 80%" (abstract p.9349); 85% (p.9360); "three-quarters" (p.9361) —> take the value from Fig 4 yourself. GWP_20 range read as [20–40] (p.9352); Warwick report says 20–44
+   6. RESOLVED from Fig 4 (p.9360): worst-case green ≈ −60% at 10yr and ≈ −85% at 100yr; worst-case blue ≈ +40% at 10yr and ≈ −45% at 100yr. Abstract's "around 80%" is rounding; "three-quarters" (p.9360) does not match the figure —> cite Fig 4, not the prose. GWP_20 range read as [20–40] (p.9352); Warwick report says 20–44
    7. Jülich Table 5 (p.10): components sum to 166 t, total given as 173 t; 2,160 t CO_2e stated vs 173 × 11.6 ≈ 2,007
    8. Source of the 1–10% leak range: ACP paper cites Schultz 2003 and Warwick 2004 (p.13453); the report cited E4tech 2019 (p.18)
    9. Cooper's CO_2e results rest on the pre-2022 GWP range 1.9–9.8 (p.2); exact value used not stated —> "29 times lower than gas" (p.10) is too generous against 11.6

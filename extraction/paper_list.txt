@@ -26,7 +26,7 @@ Changes from v2:
 
 Objective 1: chemistry + H_2 budget (2.5 pages)
   READ    Ehhalt & Rohrer 2009, Tellus B 61(3), 500–535; 10.1111/j.1600-0889.2009.00416.x [F] —> the budget reference (Table 1 p.507); soil 60 +30/−20; two incompatible soil-sink clusters, ~55 vs ~86 Tg/yr (p.522)
-  READ    Krishnan et al 2026, ACP 26(13), 9509–9539; 10.5194/acp-26-9509-2026 [F] —> 6 models; soil sink 49–77 Tg/yr; atmospheric production 37–60; atmospheric loss 15–30; no GWP given. Table 3 (p.9517) has 7.74yr and 3.41yr but the labels are unclear —> read the header yourself
+  READ    Krishnan et al 2026, ACP 26(13), 9509–9539; 10.5194/acp-26-9509-2026 [P] —> 6 models; soil sink 49–77 Tg/yr; atmospheric production 37–60; atmospheric loss 15–30; no GWP given. Table 3 (p.9518): atmospheric-loss lifetime 7.74yr; soil-uptake lifetime 3.41yr
   EXTRACT Ouyang et al 2025, "The global hydrogen budget", Nature 648, 616–624; 10.1038/s41586-025-09806-1 [P] —> sources 69.9 ± 9.4, sinks 68.4 ± 18.1 Tg/yr; soil 50.0 ± 18.0 (73%); lifetime 2.8yr; ~0.02 °C (check its baseline)
   EXTRACT Paulot et al 2024, ACP 24(7), 4217–4229; 10.5194/acp-24-4217-2024 [F] —> model underestimates surface H_2 by ~10 ppb; soil sink has most likely strengthened (NH); no GWP
   CITE    Novelli et al 1999, JGR 104(D23), 30427–30444; 10.1029/1999JD900788 [P] —> early observation-based budget; one of the 10 budget studies Warwick averages for the soil sink (report p.54)
@@ -83,7 +83,7 @@ Objective 4b: detection + odorisation
 
 
 Objective 4c: net result
-  READ    Ocko & Hamburg 2022, ACP 22(14), 9349–9368; 10.5194/acp-22-9349-2022 [F] —> impact vs fossil at 1% and 10% leak: green at 10% only ~halves impact over 20yr, ~80% cut over 100yr; blue can be worse than fossil for decades. Not a break-even calculation
+  READ    Ocko & Hamburg 2022, ACP 22(14), 9349–9368; 10.5194/acp-22-9349-2022 [P] —> impact vs fossil at 1% and 10% leak: green at 10% only ~halves impact over 20yr, ~80% cut over 100yr; blue can be worse than fossil for decades. Not a break-even calculation
   (Bertagni et al 2022, listed under obj 3) [F] —> green H_2 lowers CH_4 only if H_2 losses < 9 ± 3%; blue only if CH_4 losses < 1%
 
 
